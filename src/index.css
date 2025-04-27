@@ -1,0 +1,198 @@
+
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #1b5e20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2e7d32;
+}
+
+
+a {
+  color: #388e3c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #2e7d32;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+.back-btn {
+  background-color: #757575;
+  margin-bottom: 10px;
+}
+
+
+.search-input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #2e7d32;
+  background-color: #ffffff;
+  transition: border 0.3s;
+  color: #1b5e20;
+}
+.search-input:focus {
+  border: 1px solid #1b5e20;
+  outline: none;
+}
+.search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+
+.plant-list-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+.plant-list {
+  list-style-type: none;
+  padding: 0;
+}
+.plant-item {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.plant-item:hover {
+  background-color: #c8e6c9;
+  transform: scale(1.03);
+}
+
+
+.plant-details {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #a5d6a7;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.plant-details img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+.plant-disease-list {
+  text-align: center;
+}
+.plant-disease-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.plant-disease-list li {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #fffde7;
+  border-radius: 6px;
+  transition: background-color 0.2s, transform 0.1s;
+  border: 1px solid #fff9c4;
+}
+.plant-disease-list li:hover {
+  background-color: #fff9c4;
+  transform: scale(1.02);
+}
+
+
+.disease-details {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.loading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+.error {
+  color: #d32f2f;
+}
+.no-results {
+  font-size: 1.1rem;
+  color: #d32f2f;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.plant-details p strong,
+.disease-details p strong,
+.plant-disease-list h2,
+.plant-list-container h2 {
+  color: #001f3f;
+}
+
+
+.plant-title {
+  color: #ADD8E6; 
+}
